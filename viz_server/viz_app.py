@@ -14,7 +14,7 @@ def cli_run():
     parser.add_argument("-d", "--debug", action='store_true',
                         help="Enable debug logging")
     parser.add_argument("-e", "--external", action='store_true',
-                        help="Enable hosting on Internet")
+                        help="Listen on all IP addresses (Default: 127.0.0.1)")
     args = parser.parse_args()
 
     app = Flask(__name__)
